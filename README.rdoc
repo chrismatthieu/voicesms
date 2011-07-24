@@ -1,6 +1,6 @@
 = VoiceSMS
 
-This demo was inspired by Fred Wilson's post on hands-free texting (http://www.avc.com/a_vc/2011/07/voice-texting.html).  I used the Tropo.com Scripting API and a small Sinatra-based Ruby script to do the following:
+This demo was inspired by Fred Wilson's post on hands-free texting (http://www.avc.com/a_vc/2011/07/voice-texting.html).  I used the http://Tropo.com Scripting API and a small Sinatra-based Ruby script to do the following:
 
 - To send a text, call (415) 349-3120 and say the phone number that you would like to text and then speak your message.  Tropo will transcribe the message and place an outbound call to the desired number and read the message to them.
 
