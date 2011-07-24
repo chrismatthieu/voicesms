@@ -4,15 +4,15 @@ if !$msg.nil? or $currentCall.initialText
     call $number
     say $msg
   else
-    call "14803194368"
+    call "14803194368", {:channel => 'VOICE', :network => 'PSTN'}
     say $currentCall.initialText
   end
   
   result = ask "Would you like to reply?", {
-    :choices => "[1 DIGITS]",
+    :choices => "yes,no",
     :attempts => 3}
 
-  if result.value == '1'
+  if result.value == 'yes'
     record "Please record a message at the beep.", {
         :beep => true,
         :maxTIme => 60,
