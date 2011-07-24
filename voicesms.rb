@@ -12,7 +12,7 @@ post "/transcribe" do
   
   data = identifier.split(":") # callerid:calledid
   
-  RestClient.get 'http://api.tropo.com/1.0/sessions?action=create&token=0a061c943b623546886b62f124d0f329a71beea4135c0e8f0b55bc61e33ffa211ce1301a15a58c37781f5715&number=' + data[0] + '&msg=' + URI.escape(transcript) 
+  RestClient.get 'http://api.tropo.com/1.0/sessions?action=create&token=05a4d25035b0bb479e5d6ec53c65136c872373976cc9c151e23fea03b82ede9c9a02c24b71b42fa495e73a22&number=' + data[0] + '&msg=' + URI.escape(transcript) 
   
                 
 end
