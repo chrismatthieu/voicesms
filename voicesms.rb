@@ -3,6 +3,10 @@ require "sinatra"
 require "rest_client"
 require "uri"
 
+get "/"
+  "This app must be called from <a href='http://tropo.com'>Tropo</a>"
+end
+
 post "/transcribe" do
   require 'json'
   

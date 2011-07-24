@@ -33,6 +33,8 @@ else
       :maxTIme => 60,
       :silenceTimeout  => 2, 
       :transcriptionOutURI => "http://voicesms.heroku.com/transcribe",
-      :transcriptionID => phone + ":" + $currentCall.calledID
+      :transcriptionID => phone.value.to_s + ":" + $currentCall.calledID
       }
 end
+
+say "good bye"
