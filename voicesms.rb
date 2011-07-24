@@ -3,7 +3,7 @@ require "sinatra"
 require "rest_client"
 require "uri"
 
-get "/"
+get "/" do
   "This app must be called from <a href='http://tropo.com'>Tropo</a>"
 end
 
